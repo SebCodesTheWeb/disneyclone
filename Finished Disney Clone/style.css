@@ -1,0 +1,613 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+button  {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.flexbox-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: flex-start;
+    max-width: 1600px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em 0;
+}
+
+#logo {
+    background-image: url("img/logo.png");
+    width: 100px;
+    height: 2.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    display: none;
+}
+
+.trademark  a {
+    display: inline;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.new-film {
+    width: 100%;
+    background-color: #051336;
+    min-height: 70vh;
+    margin-bottom: 0.5em;
+}
+
+#disneyplus {
+    margin-bottom: 0;
+}
+
+#shop {
+    background-color: #eee;
+    margin-bottom: 0;
+}
+
+#shop * {
+    color: #051336;
+}
+
+.new-film-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75em;
+    align-items: center;
+    margin-top: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    padding: 0 1em 1em 1em;
+    width: 100%;
+    /* border: 3px solid cyan; */
+}
+
+#shop .new-film-info {
+    margin-top: 1em;
+}
+.new-film-info img {
+    width: 95%;
+}
+
+.new-film-info  button {
+    font-family: inherit;
+    padding: 0 3.5em;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 3em;
+    text-transform: uppercase;
+    color: #051336;
+    border: 0;
+    background-color: rgba(250, 182, 69);
+    border-radius: 3rem;
+}
+
+.buttons-film {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin-bottom: 2em;
+}
+
+.new-film-info  button.boba-fett-btn {
+    background-color: rgb(0, 119, 218);
+    color: #fff;
+    margin-bottom: 3em;
+}
+
+.new-film-info button.disneyplus-btn {
+    background-color:#fff;
+    color: #051336;
+}
+
+.disneyplus-card {
+    background-color:#0B2C66;
+    text-align: left;
+    margin-bottom: 1em;
+    width: 95%;
+}
+
+#shop .disneyplus-card {
+    background-color: #fff;
+}
+
+#shop .disneyplus-card:nth-last-child() {
+    margin-bottom: 0.5em;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.disneyplus-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.disneyplus-card > .card-content * {
+    margin-bottom: 1em;
+}
+
+.disneyplus-card p {
+    font-size: 0.8rem;
+    line-height: 1.5em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+img[src="img/disneyplus-brands.png"] {
+    margin-bottom: 1em;
+}
+
+#terms {
+    font-size: 0.75rem;
+    line-height: 1.5em;
+}
+
+#buy-now-disney-shop {
+    margin-bottom: 3em;
+}
+
+.movies {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.movies img {
+    margin-bottom: 0.5em;
+    border-radius: 2%;
+}
+
+.movies p {
+    text-align: left;
+}
+
+img[src="img/shop-logo.png"] {
+    width: 70%;
+}
+
+.news-letter {
+    width: 100vw;
+    height: 5em;
+    color: white;
+    background-color:rgb(0, 119, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    max-width: 1600px;
+}
+
+.social-media {
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.social-media p {
+    font-size: 1.1rem;
+}
+
+.trademark {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trademark * {
+    color: #333;
+}
+
+.trademark .links a {
+    font-size: 0.8rem;
+    margin-right: 0.5em;
+    line-height: 2em;
+}
+
+.links {
+    margin-bottom: 3em;
+}
+
+.trademark p {
+    font-size: 0.8rem;
+}
+
+.trademark img {
+    width: 25%;
+    margin-bottom: 1.5em;
+}
+
+.boba-fett-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#christmas img {
+    content: url("img/disneyplus-card-1.jpeg")
+}
+
+.shop-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.disneyplus-card img {
+    height: 60vw;
+    object-fit: cover;
+}
+
+img[src="img/disneyland-paris.jpeg"] {
+    content:url("img/disneyland-paris.jpeg")
+}
+
+img[src="img/walt-disney-world.jpeg"] {
+    content:url("img/walt-disney-world.jpeg")
+}
+
+@media screen and (max-width: 275px) {
+    * {
+        min-width: 275px;
+    }
+}
+
+
+@media screen and (min-width: 550px) {
+    .buttons-film {
+        flex-direction: row;
+    }
+
+    .disneyplus-btn {
+        margin-top: 1em;
+    }
+
+    #terms {
+        margin-bottom: 2em;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+    .cards  {
+        flex-direction: row;
+        margin-top: 1em;
+        width: 95%;
+        align-items: stretch;
+    }
+
+    #christmas {
+        margin-right: 1em;
+    }
+
+    #christmas img {
+        content: url("img/disneyplus-card-1-bigger.jpeg")
+    }
+
+    .disneyplus-card img {
+        height: 26vw;
+        object-fit: cover;
+    }
+
+    #disney-cards {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1.5em;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    ul > li > a {
+        display: inline;
+        font-weight: 700;
+    }
+
+    ul {
+        justify-content: flex-start;
+        padding-left: 1em;
+        gap: 1em;
+    }
+
+    img[src="img/encanto-small.jpeg"] {
+        display: none;
+    }
+
+    .buttons-film {
+        flex-direction: column;
+    }
+
+    .new-film-content {
+        max-width: 80%;
+        margin: 0 auto;
+        border: 2px solid cyan;
+    }
+
+    img[src="img/logo-encanto.png"] {
+        width: 65%;
+    }
+
+    #encanto {
+        background-image: url("img/poster-encanto.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 43vw;
+        background-position: bottom;
+        padding: 0;
+        min-height: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .new-film-info {
+        padding-bottom: 0;
+        width: 50%;
+    }
+
+    #encanto .new-film-info {
+        justify-content: center;
+        margin-left: 3em;
+    }
+
+    img[src="img/boba-fett-poster-small.jpeg"] {
+        display: none;
+    }
+
+    .boba-fett {
+        background-image: url("img/boba-fett-poster.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 95%;
+        height: 39.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .boba-fett-content {
+        margin-top: 2em;
+        width: 50%
+    }
+
+    .boba-fett-content button {
+        margin-bottom: 0;
+    }
+
+    .boba-fett img {
+        width: 100%;
+    }
+
+
+    #disneyplus .new-film-info {
+        width: 100%;
+    }
+
+    img[src="img/mimmi-pigg.jpeg"] {
+        display: none;
+    }
+
+    #shop .new-film-info {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #shop {
+        padding-top: 2em;
+    }
+
+    .shop-content {
+        background-image: url("img/mimmi-pigg-big.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 31vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 2em;
+        text-align: right;
+        padding-top: 2em;
+    }
+
+    .shop-content img {
+        width: 35%;
+    }
+
+    .movie-3 {
+        display: none;
+    }
+
+    #world {
+        margin-bottom: 1.5em;
+    }
+    
+    footer {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .trademark img {
+        width: 80px;
+    }
+
+    #linebreak {
+        display: none;
+    }
+
+    .links {
+        margin-bottom: 1em;
+    }
+
+    #copyright {
+        margin-bottom: 2em;
+    }
+
+    img[src="img/disneyland-paris.jpeg"] {
+        content:url("img/disneyland-paris-big.jpeg");
+        height: 46vw;
+        object-fit: cover;
+    }
+
+    img[src="img/walt-disney-world.jpeg"] {
+        content:url("img/walt-disney-world-big.jpeg");
+        height: 46vw;
+        object-fit: cover;
+    }
+
+    #world {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    #disney-cards {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #disney-cards img {
+        height: 23vw;
+    }
+
+    #world {
+        margin: 0 0 0 1em;
+    }
+
+    .movie-3 {
+        display: inline;
+    }
+
+    .movies {
+        justify-content: flex-start;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .movies img {
+        width: 15vw;
+    }
+
+    .movies p {
+        font-weight: 700;
+    }
+
+    .buttons-film {
+        flex-direction: row;
+        gap: 2em;
+    }
+}
+
+@media  screen and (min-width: 1600px) {
+
+    .new-film-info h1 {
+        margin-bottom: 0.25em;
+    }
+
+
+    #encanto {
+        height: 36vw;
+    }
+
+    .disneyplus-card img {
+        height: 22vw;
+        object-fit: cover;
+    }
+
+    .new-film {
+        padding: 0 3em;
+    }
+
+    .boba-fett {
+        height: 31vw;
+    }
+
+    .new-film {
+        margin-bottom: 1em;
+    }
+
+    .shop-content {
+        height: 24vw;
+        object-fit: contain;
+    }
+
+    ul {
+        gap: 2em;
+    }
+
+    ul * {
+        font-size: 0.9rem;
+    }
+
+    #logo {
+        height: 2.75em;
+    }
+}
