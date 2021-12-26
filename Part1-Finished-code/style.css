@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    /* border: 1px dotted magenta; */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu img {
+    width: 80px;
+    padding: 1em 0;
+}
+
+.nav-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    display: none;
+}
+
+.section {
+    background-color: #051336;
+    min-height: 40vh;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.section-content {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    padding-bottom: 3em;
+}
+
+button{
+    background-color: rgba(250, 182, 69);
+    color: #051336;
+    border-radius: 25px;
+    border: 0;
+    width: 60%;
+    padding: 0.75em 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+#disneyplus {
+    margin-bottom: 0;
+}
+
+#disneyplus-content {
+     width: 90%;
+     margin: 0 auto;
+}
+
+#disneyplus-content button {
+    color: #fff;
+    background-color: rgb(0, 119, 218);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #0B2C66;
+    gap: 0.5em;
+    text-align: left;
+}
+
+.card h3 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    line-height: 1.25em;
+}
+
+.card-content {
+    padding: 0 1em 1em 1em;
+}
+
+.card-content * {
+    margin-bottom: 0.5em;
+}
+
+#shop {
+    background-color: #EEE;
+    color: #051336;
+    padding: 1em;
+}
+
+img[src="img/shop-logo.png"] {
+    width: 250px;
+}
+
+#shop h2 {
+    text-align: center;
+}
+
+.movies {
+    display: flex;
+    text-align: left;
+}
+
+.movies p {
+    font-weight: 700;
+}
+
+.movie {
+    margin-right: 0.5em;
+}
+
+.movie img {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.movie-3 img {
+    margin-right: 0;
+}
+
+#mickey-mouse, #girl {
+    background-color: #fff;
+}
+
+.mickey-mouse-content, .girl-content {
+    padding: 1em;
+}
+
+.news-letter {
+    width: 100vw;
+    height: 3em;
+    background-color: rgb(0, 119, 218);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#girl, #girl-content, #shop-content, #shop {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.social-media {
+    align-self: flex-start;
+    margin-bottom: 3em;
+}
+
+.social-media p {
+    font-size: 1.25rem;
+}
+
+footer img {
+    width: 100px;
+    margin-bottom: 1em;
+}
+
+.links {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.links a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    word-spacing: 0.2em;
+    line-height: 2em;
+}
+
+.trademark {
+    color: #333;
+    font-size: 0.72rem;
+    text-align: center,
+}
