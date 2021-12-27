@@ -1,0 +1,434 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+body {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 1600px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu img {
+    width: 80px;
+    padding: 1em 0;
+}
+
+.nav-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    display: none;
+}
+
+.section {
+    background-color: #051336;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.section-content {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    padding-bottom: 3em;
+}
+
+img[src="img/logo-encanto.png"] {
+    width: 500px;
+}
+
+button{
+    background-color: rgba(250, 182, 69);
+    color: #051336;
+    border-radius: 25px;
+    border: 0;
+    width: 240px;
+    padding: 0.75em 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+
+#disneyplus {
+    margin-bottom: 0;
+}
+
+#disneyplus-content, #shop-content {
+     width: 90%;
+     margin: 0 auto;
+}
+
+img[src="img/mimmi-pigg.jpeg"] {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#disneyplus-content button {
+    color: #fff;
+    background-color: rgb(0, 119, 218);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #0B2C66;
+    gap: 0.5em;
+    text-align: left;
+}
+
+.card h3 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    line-height: 1.25em;
+}
+
+.content {
+    padding: 0 1em 1em 1em;
+}
+
+.card-content * {
+    margin-bottom: 0.5em;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+#shop {
+    background-color: #EEE;
+    color: #051336;
+}
+
+img[src="img/shop-logo.png"] {
+    width: 250px;
+}
+
+#shop h2 {
+    text-align: center;
+}
+
+.movies {
+    display: flex;
+    text-align: left;
+}
+
+.movies p {
+    font-weight: 700;
+}
+
+.movie {
+    margin-right: 0.5em;
+}
+
+.movie img {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.movie-3 img {
+    margin-right: 0;
+}
+
+#mickey-mouse, #girl {
+    background-color: #fff;
+    width: 100%;
+}
+
+.mickey-mouse-content, .girl-content {
+    padding: 1em;
+}
+
+.news-letter {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 0.5em;
+    height: 3em;
+    background-color: rgb(0, 119, 218);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#girl, #girl-content, #shop-content, #shop {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#shop {
+    padding-bottom: 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.social-media {
+    align-self: center;
+    margin-bottom: 3em;
+}
+
+.social-media p {
+    font-size: 1.25rem;
+}
+
+footer img {
+    width: 100px;
+    margin-bottom: 1em;
+}
+
+.links {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.links a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    word-spacing: 0.2em;
+    line-height: 2em;
+}
+
+.trademark {
+    color: #333;
+    font-size: 0.72rem;
+    text-align: center;
+}
+
+.button-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-flexbox-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mimmi-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.disneyland-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boba-fett-content {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 550px) {
+    .button-flex-container, .card-flexbox-container {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 50%;
+    }
+}
+
+@media  screen and (min-width: 780px) {
+
+    img[src="img/encanto-small.jpeg"] {
+        display: none;
+    }
+
+    #encanto, .boba-fett-bg-image, .mimmi-bg-image {
+        background-image: url("img/poster-encanto.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 43vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3em;
+        width: 100%;
+    }
+
+    .boba-fett-bg-image {
+        background-size: contain;
+        min-height: 38.5vw;
+    }
+
+    .boba-fett-bg-image {
+        background-image: url("img/boba-fett-poster.jpeg");
+    }
+
+    .boba-fett-content {
+        width: 50%;
+    }
+
+
+
+    .button-flex-container {
+        flex-direction: column;
+    }
+
+    #encanto-content {
+        width: 40%;
+    }
+
+    img[src="img/logo-encanto.png"] {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .nav-menu li a {
+        display: inline;
+    }
+
+    .nav-menu {
+        justify-content: flex-start;
+        gap: 2em;
+        margin-left: 2em;
+    }
+
+    img[src="img/boba-fett-poster-small.jpeg"] {
+        display: none;
+    }
+
+    img[src="img/mimmi-pigg.jpeg" ]  {
+        display: none;
+    }
+
+    .mimmi-bg-image {
+        background-image: url("img/mimmi-pigg-big.jpeg");
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.5em;
+        background-size: cover;
+        min-height: 32.5vw;
+    }
+
+    .mimmi-content {
+        align-items: flex-end;
+    }
+
+    .movie-3 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .movie-3 {
+        display: inline;
+    }
+
+    .movies {
+        justify-content: flex-start;
+    }
+
+    .movie {
+        width: 20%;
+    }
+
+    .disneyland-cards {
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+
+@media  screen and (min-width: 1230px) {
+    .button-flex-container {
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (min-width: 1600px) {
+    #encanto {
+        min-height: 672px;
+    }
+
+    .boba-fett-bg-image {
+        min-height: 615px;
+    }
+
+    .mimmi-bg-image {
+        min-height: 600px;
+        padding-right: 3em;
+    }
+
+    img[src="img/shop-logo.png"] {
+        width: 300px;
+
+    }
+
+    :root {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media screen and (max-width: 250px) {
+
+    html, body {
+        overflow: scroll;
+    }
+
+    body {
+        justify-content: flex-start;
+    }
+
+    .container {
+        min-width: 250px;
+    }
+
+    .movies {
+        display: inline;
+    }
+    
+}
