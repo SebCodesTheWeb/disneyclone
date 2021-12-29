@@ -1,4 +1,7 @@
 # Disneyclone Coding Challenge Day 5
+
+--View the deployed site here: https://disneylandingpageclone.netlify.app/
+
 A responsive vanilla css &amp; html clone of the disney.com landing page - Flexbox
 
 This is the my coding project for the fifth day of my coding challenge. I've coded a clone of the Disney.com landing page, using vanilla css and html. You can clone this respostitory and follow along my youtube-tutorial to code and learn with me. This project focuses heavily on flexbox, because it is what I'm learning at course curriculum at scrimba.com.
